@@ -1,98 +1,260 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { IconSymbol } from '@/components/ui/icon-symbol';
+import { useAuth } from '@/contexts/AuthContext';
+import { Contact } from '@/types';
+import React, { useEffect, useState } from 'react';
+import {
+  Alert,
+  FlatList,
+  RefreshControl,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View
+} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+export default function ContactsScreen() {
+  const { userProfile } = useAuth();
+  const [contacts, setContacts] = useState<Contact[]>([]);
+  const [filteredContacts, setFilteredContacts] = useState<Contact[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
 
-export default function HomeScreen() {
+  // Mock data for now - will be replaced with Firebase integration
+  useEffect(() => {
+    loadContacts();
+  }, []);
+
+  useEffect(() => {
+    filterContacts();
+  }, [contacts, searchQuery]);
+
+  const loadContacts = async () => {
+    setLoading(true);
+    // TODO: Replace with actual Firebase data loading
+    setTimeout(() => {
+      setContacts([
+        {
+          id: '1',
+          userId: 'user1',
+          firstName: 'John',
+          lastName: 'Doe',
+          company: 'Tech Corp',
+          email: 'john@techcorp.com',
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          id: '2',
+          userId: 'user1',
+          firstName: 'Jane',
+          lastName: 'Smith',
+          company: 'Design Studio',
+          email: 'jane@designstudio.com',
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ]);
+      setLoading(false);
+    }, 1000);
+  };
+
+  const filterContacts = () => {
+    if (!searchQuery.trim()) {
+      setFilteredContacts(contacts);
+      return;
+    }
+
+    const filtered = contacts.filter(contact => 
+      contact.firstName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      contact.lastName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      contact.company.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      contact.email?.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredContacts(filtered);
+  };
+
+  const onRefresh = async () => {
+    setRefreshing(true);
+    await loadContacts();
+    setRefreshing(false);
+  };
+
+  const handleAddContact = () => {
+    Alert.alert('Add Contact', 'This feature will be implemented soon!');
+  };
+
+  const handleContactPress = (contact: Contact) => {
+    Alert.alert('Contact Details', `Viewing details for ${contact.firstName} ${contact.lastName}`);
+  };
+
+  const renderContact = ({ item }: { item: Contact }) => (
+    <TouchableOpacity style={styles.contactItem} onPress={() => handleContactPress(item)}>
+      <View style={styles.contactAvatar}>
+        <Text style={styles.avatarText}>
+          {item.firstName[0]}{item.lastName[0]}
+        </Text>
+      </View>
+      <View style={styles.contactInfo}>
+        <Text style={styles.contactName}>
+          {item.firstName} {item.lastName}
+        </Text>
+        <Text style={styles.contactCompany}>{item.company}</Text>
+        {item.email && (
+          <Text style={styles.contactEmail}>{item.email}</Text>
+        )}
+      </View>
+      <IconSymbol name="chevron.right" size={16} color="#999" />
+    </TouchableOpacity>
+  );
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.title}>Contacts</Text>
+        <TouchableOpacity style={styles.addButton} onPress={handleAddContact}>
+          <IconSymbol name="plus" size={24} color="white" />
+        </TouchableOpacity>
+      </View>
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+      <View style={styles.searchContainer}>
+        <IconSymbol name="magnifyingglass" size={20} color="#999" />
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Search contacts..."
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+        />
+      </View>
+
+      <FlatList
+        data={filteredContacts}
+        renderItem={renderContact}
+        keyExtractor={(item) => item.id}
+        contentContainerStyle={styles.listContainer}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
+        ListEmptyComponent={
+          <View style={styles.emptyContainer}>
+            <IconSymbol name="person.2" size={48} color="#ccc" />
+            <Text style={styles.emptyText}>No contacts found</Text>
+            <Text style={styles.emptySubtext}>
+              {searchQuery ? 'Try adjusting your search' : 'Add your first contact to get started'}
+            </Text>
+          </View>
+        }
+      />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
+  container: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    backgroundColor: 'white',
+    borderBottomWidth: 1,
+    borderBottomColor: '#e0e0e0',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  addButton: {
+    backgroundColor: '#007AFF',
+    borderRadius: 20,
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    backgroundColor: 'white',
+    margin: 16,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#e0e0e0',
   },
-  stepContainer: {
-    gap: 8,
+  searchInput: {
+    flex: 1,
+    padding: 12,
+    fontSize: 16,
+  },
+  listContainer: {
+    padding: 16,
+  },
+  contactItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    padding: 16,
+    borderRadius: 8,
+    marginBottom: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  contactAvatar: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: '#007AFF',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+  },
+  avatarText: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  contactInfo: {
+    flex: 1,
+  },
+  contactName: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#333',
+    marginBottom: 2,
+  },
+  contactCompany: {
+    fontSize: 14,
+    color: '#666',
+    marginBottom: 2,
+  },
+  contactEmail: {
+    fontSize: 12,
+    color: '#999',
+  },
+  emptyContainer: {
+    alignItems: 'center',
+    paddingVertical: 60,
+  },
+  emptyText: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#666',
+    marginTop: 16,
     marginBottom: 8,
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  emptySubtext: {
+    fontSize: 14,
+    color: '#999',
+    textAlign: 'center',
   },
 });

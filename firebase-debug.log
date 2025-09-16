@@ -1,0 +1,502 @@
+[debug] [2025-09-15T15:08:36.466Z] ----------------------------------------------------------------------
+[debug] [2025-09-15T15:08:36.473Z] Command:       /Users/cananengin/.nvm/versions/node/v22.17.0/bin/node /Users/cananengin/.nvm/versions/node/v22.17.0/bin/firebase emulators:start
+[debug] [2025-09-15T15:08:36.474Z] CLI Version:   14.16.0
+[debug] [2025-09-15T15:08:36.474Z] Platform:      darwin
+[debug] [2025-09-15T15:08:36.474Z] Node Version:  v22.17.0
+[debug] [2025-09-15T15:08:36.474Z] Time:          Mon Sep 15 2025 18:08:36 GMT+0300 (GMT+03:00)
+[debug] [2025-09-15T15:08:36.474Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-15T15:08:36.636Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-15T15:08:36.637Z] > authorizing via signed-in user (cananenginn5@gmail.com)
+[debug] [2025-09-15T15:08:36.884Z] openjdk version "21.0.8" 2025-07-15 LTS
+
+[debug] [2025-09-15T15:08:36.884Z] OpenJDK Runtime Environment Temurin-21.0.8+9 (build 21.0.8+9-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.8+9 (build 21.0.8+9-LTS, mixed mode, sharing)
+
+[debug] [2025-09-15T15:08:36.896Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, storage, extensions"}}
+[debug] [2025-09-15T15:08:36.898Z] Checked if tokens are valid: false, expires at: 1757946737720
+[debug] [2025-09-15T15:08:36.898Z] Checked if tokens are valid: false, expires at: 1757946737720
+[debug] [2025-09-15T15:08:36.898Z] > refreshing access token with scopes: []
+[debug] [2025-09-15T15:08:36.899Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-15T15:08:36.899Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-15T15:08:37.091Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-15T15:08:37.091Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-15T15:08:37.112Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/fuar-crm [none]
+[debug] [2025-09-15T15:08:38.102Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/fuar-crm 200
+[debug] [2025-09-15T15:08:38.102Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/fuar-crm {"projectNumber":"76753901243","projectId":"fuar-crm","lifecycleState":"ACTIVE","name":"fuar-crm","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-09-14T13:15:12.687384Z"}
+[debug] [2025-09-15T15:08:38.378Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.378Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.378Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.378Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.378Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.378Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":3001},{"address":"::1","family":"IPv6","port":3001}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-09-15T15:08:38.382Z] Emulator locator file path: /var/folders/2b/9b99qv1j1fj5tqcbhvw3ydq80000gn/T/hub-fuar-crm.json
+[debug] [2025-09-15T15:08:38.382Z] [hub] writing locator at /var/folders/2b/9b99qv1j1fj5tqcbhvw3ydq80000gn/T/hub-fuar-crm.json
+[debug] [2025-09-15T15:08:38.385Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-09-15T15:08:38.492Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.492Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.492Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-15T15:08:38.492Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":3001},{"address":"::1","family":"IPv6","port":3001}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, database, hosting, pubsub, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, database, hosting, pubsub, dataconnect\u001b[22m"}}
+[debug] [2025-09-15T15:08:38.499Z] defaultcredentials: writing to file /Users/cananengin/.config/firebase/cananenginn5_gmail_com_application_default_credentials.json
+[debug] [2025-09-15T15:08:38.501Z] Setting GAC to /Users/cananengin/.config/firebase/cananenginn5_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/cananengin/.config/firebase/cananenginn5_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-15T15:08:38.501Z] Checked if tokens are valid: true, expires at: 1757952516091
+[debug] [2025-09-15T15:08:38.501Z] Checked if tokens are valid: true, expires at: 1757952516091
+[debug] [2025-09-15T15:08:38.501Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fuar-crm/adminSdkConfig [none]
+[debug] [2025-09-15T15:08:38.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fuar-crm/adminSdkConfig 200
+[debug] [2025-09-15T15:08:38.919Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fuar-crm/adminSdkConfig {"projectId":"fuar-crm","storageBucket":"fuar-crm.firebasestorage.app"}
+[debug] [2025-09-15T15:08:38.932Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-09-15T15:08:38.932Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-09-15T15:08:38.932Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/cananengin/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","fuar-crm","--rules","/Users/cananengin/Desktop/fuar/fuar-crm/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/cananengin/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"fuar-crm\",\"--rules\",\"/Users/cananengin/Desktop/fuar/fuar-crm/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-09-15T15:08:39.866Z] Sep 15, 2025 6:08:39 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:08:39 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-09-15T15:08:39.890Z] API endpoint: http://127.0.0.1:8080
+ {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\n"}}
+[debug] [2025-09-15T15:08:39.891Z] If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080"}}
+[debug] [2025-09-15T15:08:39.891Z] 
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-09-15T15:08:43.962Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-09-15T15:08:44.653Z] Temp file directory for storage emulator: /var/folders/2b/9b99qv1j1fj5tqcbhvw3ydq80000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/2b/9b99qv1j1fj5tqcbhvw3ydq80000gn/T/firebase/storage/blobs"}}
+[debug] [2025-09-15T15:08:44.688Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "/Users/cananengin/Desktop/fuar/fuar-crm/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/cananengin/Desktop/fuar/fuar-crm/functions\" for Cloud Functions..."}}
+[debug] [2025-09-15T15:08:44.700Z] Validating nodejs source
+[debug] [2025-09-15T15:08:45.495Z] > [functions] package.json contents: {
+  "name": "functions",
+  "private": true,
+  "main": "lib/index.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.ts . || echo \"(lint skipped)\"",
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run serve",
+    "deploy": "npm run build && firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  }
+}
+[debug] [2025-09-15T15:08:45.496Z] Building nodejs source
+[debug] [2025-09-15T15:08:45.497Z] Failed to find version of module node: reached end of search path /Users/cananengin/Desktop/fuar/fuar-crm/functions/node_modules
+[info] ✔  functions: Using node@22 from host. 
+[debug] [2025-09-15T15:08:45.499Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-15T15:08:45.504Z] Found firebase-functions binary at '/Users/cananengin/Desktop/fuar/fuar-crm/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8391
+
+[debug] [2025-09-15T15:08:45.845Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-09-15T15:08:49.872Z] defaultcredentials: writing to file /Users/cananengin/.config/firebase/cananenginn5_gmail_com_application_default_credentials.json
+[debug] [2025-09-15T15:08:49.877Z] Setting GAC to /Users/cananengin/.config/firebase/cananenginn5_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/cananengin/.config/firebase/cananenginn5_gmail_com_application_default_credentials.json"}}
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2025-09-15T15:08:49.885Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:3001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:3001/auth       │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:3001/functions  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:3001/firestore  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:3001/storage    │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5001 │ http://127.0.0.1:3001/extensions │
+└────────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-09-15T15:09:15.784Z] Sep 15, 2025 6:09:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:09:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T15:09:15.868Z] Sep 15, 2025 6:09:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:09:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T15:10:50.224Z] Sep 15, 2025 6:10:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:10:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T15:26:02.719Z] Sep 15, 2025 6:26:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:26:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-15T15:26:02.760Z] Sep 15, 2025 6:26:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:26:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T15:27:48.434Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/fuar-crm/trigger_multicast [none]
+[debug] [2025-09-15T15:27:48.436Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/fuar-crm/trigger_multicast {"eventId":"fb5841c4-1b22-4e23-9cf7-4d8410f80043","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/fuar-crm","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2025-09-15T15:27:48.429Z","data":{"uid":"GYxGT7TXGciHGPAvA0c0KB9hZSwS","email":"canan.enginn5@gmail.com","emailVerified":false,"metadata":{"creationTime":"2025-09-15T15:27:48.420Z","lastSignInTime":"2025-09-15T15:27:48.420Z"},"customClaims":{},"providerData":[{"rawId":"canan.enginn5@gmail.com","providerId":"password","email":"canan.enginn5@gmail.com","federatedId":"canan.enginn5@gmail.com"}]}}
+[debug] [2025-09-15T15:27:48.469Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/fuar-crm/trigger_multicast 200
+[debug] [2025-09-15T15:27:48.469Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/fuar-crm/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2025-09-15T15:27:48.510Z] Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:27:48.517Z] Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:27:48.641Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:27:48.895Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:27:48.973Z] Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:27:48.985Z] Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:27:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:27:49.110Z] Sep 15, 2025 6:27:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:27:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:27:49.122Z] Sep 15, 2025 6:27:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:27:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:28:31.385Z] Sep 15, 2025 6:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:28:31.390Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:28:31.431Z] Sep 15, 2025 6:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:28:31.446Z] Sep 15, 2025 6:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:28:34.688Z] Sep 15, 2025 6:28:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:28:49.139Z] Sep 15, 2025 6:28:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:28:49.720Z] Sep 15, 2025 6:28:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Sep 15, 2025 6:28:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nSep 15, 2025 6:28:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:28:49.727Z] Sep 15, 2025 6:28:49 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreWriteHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:49 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreWriteHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:28:49.729Z] Sep 15, 2025 6:28:49 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:49 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:28:58.142Z] Sep 15, 2025 6:28:58 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:58 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-15T15:28:58.209Z] Sep 15, 2025 6:28:58 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:28:58 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T15:29:04.296Z] Checked if tokens are valid: true, expires at: 1757952516091
+[debug] [2025-09-15T15:29:04.296Z] Checked if tokens are valid: true, expires at: 1757952516091
+[debug] [2025-09-15T15:29:04.296Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fuar-crm/adminSdkConfig [none]
+[debug] [2025-09-15T15:29:04.690Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fuar-crm/adminSdkConfig 200
+[debug] [2025-09-15T15:29:04.690Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fuar-crm/adminSdkConfig {"projectId":"fuar-crm","storageBucket":"fuar-crm.firebasestorage.app"}
+[debug] [2025-09-15T15:29:31.447Z] Sep 15, 2025 6:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:29:31.453Z] Sep 15, 2025 6:29:31 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:29:31 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:30:47.787Z] Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:30:47.791Z] Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:30:47.812Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:30:47.812Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:30:47.843Z] Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:30:47.854Z] Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:30:47.858Z] Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:30:47.868Z] Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:30:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:31:47.982Z] Sep 15, 2025 6:31:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:31:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:31:48.714Z] Sep 15, 2025 6:31:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:31:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:31:48.729Z] Sep 15, 2025 6:31:48 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:31:48 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:31:51.166Z] Sep 15, 2025 6:31:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:31:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:31:51.183Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:31:51.209Z] Sep 15, 2025 6:31:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:31:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:31:51.254Z] Sep 15, 2025 6:31:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:31:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:01.757Z] Sep 15, 2025 6:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:01.764Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:32:01.777Z] Sep 15, 2025 6:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:01.786Z] Sep 15, 2025 6:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:44.526Z] Sep 15, 2025 6:32:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:44.534Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:32:44.556Z] Sep 15, 2025 6:32:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:44.566Z] Sep 15, 2025 6:32:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:51.287Z] Sep 15, 2025 6:32:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:51.679Z] Sep 15, 2025 6:32:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:32:51.686Z] Sep 15, 2025 6:32:51 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:32:51 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:33:44.619Z] Sep 15, 2025 6:33:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:33:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:33:44.676Z] Sep 15, 2025 6:33:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:33:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:33:44.680Z] Sep 15, 2025 6:33:44 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:33:44 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:34:28.656Z] Sep 15, 2025 6:34:28 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:34:28 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-15T15:34:28.742Z] Sep 15, 2025 6:34:28 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:34:28 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T15:34:58.991Z] Sep 15, 2025 6:34:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:34:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:34:59.013Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:34:59.036Z] Sep 15, 2025 6:34:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:34:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:34:59.043Z] Sep 15, 2025 6:34:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:34:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:35:11.052Z] Sep 15, 2025 6:35:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:35:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:35:11.058Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:35:11.087Z] Sep 15, 2025 6:35:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:35:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:35:11.098Z] Sep 15, 2025 6:35:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:35:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:36:11.154Z] Sep 15, 2025 6:36:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:36:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:36:11.677Z] Sep 15, 2025 6:36:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:36:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:36:11.687Z] Sep 15, 2025 6:36:11 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:36:11 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:37:49.156Z] Sep 15, 2025 6:37:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:37:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:37:49.166Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:37:49.189Z] Sep 15, 2025 6:37:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:37:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:37:49.197Z] Sep 15, 2025 6:37:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:37:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:38:01.833Z] Sep 15, 2025 6:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:38:01.835Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:38:01.843Z] Sep 15, 2025 6:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:38:01.855Z] Sep 15, 2025 6:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:38:47.674Z] Sep 15, 2025 6:38:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:38:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:39:02.671Z] Sep 15, 2025 6:39:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:39:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:39:02.677Z] Sep 15, 2025 6:39:02 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:39:02 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:39:54.888Z] Sep 15, 2025 6:39:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:39:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:39:54.902Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:39:54.919Z] Sep 15, 2025 6:39:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:39:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:39:54.927Z] Sep 15, 2025 6:39:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:39:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:40:54.952Z] Sep 15, 2025 6:40:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:40:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:40:55.661Z] Sep 15, 2025 6:40:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:40:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:40:55.671Z] Sep 15, 2025 6:40:55 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:40:55 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:43:54.958Z] Sep 15, 2025 6:43:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:43:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:43:54.966Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:43:54.992Z] Sep 15, 2025 6:43:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:43:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:43:55.001Z] Sep 15, 2025 6:43:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:43:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:44:07.597Z] Sep 15, 2025 6:44:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:44:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:44:07.610Z] Sep 15, 2025 6:44:07 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:44:07 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T15:44:25.829Z] Sep 15, 2025 6:44:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:44:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:44:25.835Z] Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '"singleProjectMode": false' property in the firebase.json emulators config.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Multiple projectIds are not recommended in single project mode. Requested project ID demo-project, but the emulator is configured for fuar-crm. To opt-out of single project mode add/set the '\"singleProjectMode\": false' property in the firebase.json emulators config.\n"}}
+[debug] [2025-09-15T15:44:25.859Z] Sep 15, 2025 6:44:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:44:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:44:25.867Z] Sep 15, 2025 6:44:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:44:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:44:31.960Z] Sep 15, 2025 6:44:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:44:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-09-15T15:44:31.966Z] Sep 15, 2025 6:44:31 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 6:44:31 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2025-09-15T16:02:01.952Z] Sep 15, 2025 7:02:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 7:02:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-15T16:02:01.960Z] Sep 15, 2025 7:02:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Sep 15, 2025 7:02:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 7:02:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\nSep 15, 2025 7:02:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-15T16:17:12.898Z] Sep 15, 2025 7:17:12 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 7:17:12 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T16:17:12.937Z] Sep 15, 2025 7:17:12 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 7:17:12 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T16:17:12.956Z] Sep 15, 2025 7:17:12 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 7:17:12 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T20:49:42.866Z] Sep 15, 2025 11:49:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Sep 15, 2025 11:49:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Sep 15, 2025 11:49:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 11:49:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\nSep 15, 2025 11:49:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\nSep 15, 2025 11:49:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-15T20:59:50.078Z] Sep 15, 2025 11:59:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 11:59:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T20:59:50.095Z] Sep 15, 2025 11:59:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 11:59:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-15T20:59:50.113Z] Sep 15, 2025 11:59:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2025 11:59:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-16T02:50:10.527Z] Sep 16, 2025 5:50:10 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Sep 16, 2025 5:50:10 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Sep 16, 2025 5:50:10 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 5:50:10 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\nSep 16, 2025 5:50:10 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\nSep 16, 2025 5:50:10 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-16T03:25:20.379Z] Sep 16, 2025 6:25:20 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 6:25:20 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-16T03:25:20.403Z] Sep 16, 2025 6:25:20 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 6:25:20 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-16T03:25:20.420Z] Sep 16, 2025 6:25:20 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 6:25:20 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-16T17:20:34.732Z] Sep 16, 2025 8:20:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Sep 16, 2025 8:20:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Sep 16, 2025 8:20:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 8:20:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\nSep 16, 2025 8:20:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\nSep 16, 2025 8:20:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-09-16T19:16:45.688Z] Sep 16, 2025 10:16:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 10:16:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-16T19:16:45.714Z] Sep 16, 2025 10:16:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 10:16:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-09-16T19:16:45.732Z] Sep 16, 2025 10:16:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 16, 2025 10:16:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
